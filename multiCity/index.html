@@ -1,0 +1,3168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MultiCity - Travel Explorer</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="icon" href="../assets/img/favicon.ico" />
+
+    <!-- Owl Carousl Start -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/owlCarousel.css" />
+    <!-- Owl Carousel End -->
+
+    <!-- jQuery CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google jQuery CDN Link -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+
+    <!-- Bootstrap v5.2 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <section style="height: auto !important" class="wrapper">
+      <section>
+        <header>
+          <div class="header">
+            <nav class="navbar navbar-light bg-light p-0">
+              <div class="container-fluid">
+                <a class="navbar-brand p-0" href="../"
+                  ><img
+                    class="travelExplorerLogo"
+                    src="../assets/img/logo.png"
+                    alt="Travel Explorer"
+                /></a>
+                <ul
+                  class="list-group list-group-horizontal top-nav-links flex-end"
+                >
+                  <li class="list-group-item nav-item p-0">
+                    <a href="../" class="nav-link active on">Home</a>
+                  </li>
+                  <li class="list-group-item nav-item p-0">
+                    <a href="../services/index.html" class="nav-link"
+                      >Services</a
+                    >
+                  </li>
+                  <li class="list-group-item nav-item p-0">
+                    <a href="../about/index.html" class="nav-link">About us</a>
+                  </li>
+                  <li class="list-group-item nav-item p-0">
+                    <a href="../contact/index.html" class="nav-link">Contact</a>
+                  </li>
+                </ul>
+                <button
+                  class="navbar-toggler nav-bars"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasDarkNavbar"
+                  aria-controls="offcanvasDarkNavbar"
+                >
+                  <span
+                    style="color: var(--base-color)"
+                    class="pr-8 pt-0 navbar-toggler-icon"
+                    ><i style="font-size: 28px" class="fas fa-bars"></i
+                  ></span>
+                </button>
+                <div
+                  class="offcanvas offcanvas-end text-bg-dark"
+                  tabindex="-1"
+                  id="offcanvasDarkNavbar"
+                  aria-labelledby="offcanvasDarkNavbarLabel"
+                >
+                  <div
+                    class="offcanvas-header"
+                    style="background-color: var(--base-color)"
+                  >
+                    <button
+                      type="button"
+                      class="btn-close btn-close-white"
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                    ></button>
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                      My Travel Explorer
+                    </h5>
+                  </div>
+                  <div class="offcanvas-body bg-light">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="mob nav-item">
+                        <a
+                          class="nav-link active on"
+                          aria-current="page"
+                          href="../"
+                          >Home</a
+                        >
+                      </li>
+                      <li class="mob nav-item">
+                        <a class="nav-link" href="../services/index.html"
+                          >Services</a
+                        >
+                      </li>
+                      <li class="mob nav-item">
+                        <a class="nav-link" href="../about/index.html"
+                          >About us</a
+                        >
+                      </li>
+                      <li class="mob nav-item">
+                        <a class="nav-link" href="../contact/index.html"
+                          >Contact</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </header>
+      </section>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <div class="card w-100">
+                <div class="card-body">
+                  <div class="row d-flex">
+                    <div class="col">
+                      <small>MULTI CITY</small>
+                      <div class="h6">LONDON (LHR) to LAGOS (LOS)</div>
+                      <div class="hide-on-desktop h6">Sat. 23 Jul., 2022</div>
+                    </div>
+                    <div class="col hide-on-mobile">
+                      <small>Departure Date</small>
+                      <div class="h6">Sat. 23 Jul., 2022</div>
+                    </div>
+                    <div class="col">
+                      <small>Traveller(s)</small>
+                      <div class="h6">Adult: 1, Child: 1, Infant: 1</div>
+                      <div class="h6">(Economy)</div>
+                    </div>
+                    <div class="col">
+                      <button
+                        type="button"
+                        class="w-auto btn travel-btn accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#modifySearch"
+                        aria-expanded="false"
+                        aria-controls="modifySearch"
+                      >
+                        Modify<span class="hide-on-mobile">&nbsp;Search</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                id="modifySearch"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <!-- Flight modes start -->
+                  <div
+                    class="tab-pane fade show active"
+                    id="flight-pane"
+                    role="tabpanel"
+                    aria-labelledby="flight"
+                    tabindex="0"
+                  >
+                    <div class="row">
+                      <ul
+                        class="nav nav-pills mt-1"
+                        id="pills-tab"
+                        role="tablist"
+                        style="width: auto"
+                      >
+                        <li class="nav-item" role="presentation">
+                          <a
+                            class="nav-link active"
+                            id="roundTrip-tab"
+                            data-bs-toggle="pill"
+                            data-bs-target="#roundTrip"
+                            type="button"
+                            role="tab"
+                            aria-controls="roundTrip"
+                            aria-selected="true"
+                            ><small>Round Trip</small></a
+                          >
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a
+                            class="nav-link"
+                            id="oneWay-tab"
+                            data-bs-toggle="pill"
+                            data-bs-target="#oneWay"
+                            type="button"
+                            role="tab"
+                            aria-controls="oneWay"
+                            aria-selected="false"
+                            ><small>One Way</small></a
+                          >
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a
+                            class="nav-link"
+                            id="multiCity-tab"
+                            data-bs-toggle="pill"
+                            data-bs-target="#multiCity"
+                            type="button"
+                            role="tab"
+                            aria-controls="multiCity"
+                            aria-selected="false"
+                            ><small>Multi City</small></a
+                          >
+                        </li>
+                      </ul>
+                      <div class="tab-content" id="pills-tabContent">
+                        <!-- Round trip forms start -->
+                        <div
+                          class="tab-pane fade show active align-items-center"
+                          id="roundTrip"
+                          role="tabpanel"
+                          aria-labelledby="roundTrip-tab"
+                          tabindex="0"
+                        >
+                          <form action="./roundTrip/index.html">
+                            <div class="row gx-0 justify-content-center">
+                              <div class="col-md-2">
+                                <div class="input-group">
+                                  <div class="form-floating">
+                                    <input
+                                      type="text"
+                                      class="form-control form-control-sm"
+                                      placeholder="Where from?"
+                                      aria-label="Where from?"
+                                      aria-describedby="whereFrom"
+                                      name="whereFrom"
+                                    />
+                                    <label
+                                      class="col-form-label col-form-label-sm"
+                                      for="whereFrom"
+                                      >Where from?</label
+                                    >
+                                  </div>
+                                  <span class="input-group-text" id="whereFrom"
+                                    ><i
+                                      class="fa-sharp fa-solid fa-plane-departure"
+                                    ></i
+                                  ></span>
+                                </div>
+                              </div>
+
+                              <div class="col-md-2">
+                                <div class="input-group">
+                                  <div class="form-floating">
+                                    <input
+                                      type="text"
+                                      class="form-control form-control-sm"
+                                      placeholder="Where to?"
+                                      aria-label="Where to?"
+                                      aria-describedby="whereTo"
+                                      name="whereTo"
+                                    />
+                                    <label
+                                      class="col-form-label col-form-label-sm"
+                                      for="whereTo"
+                                      >Where to?</label
+                                    >
+                                  </div>
+                                  <span class="input-group-text" id="whereTo"
+                                    ><i
+                                      class="fa-sharp fa-solid fa-plane-arrival"
+                                    ></i
+                                  ></span>
+                                </div>
+                              </div>
+
+                              <div class="col-md-2">
+                                <div class="input-group">
+                                  <div class="form-floating">
+                                    <input
+                                      type="date"
+                                      class="form-control form-control-sm"
+                                      placeholder="Departure date?"
+                                      aria-label="Departure date?"
+                                      aria-describedby="departureDate"
+                                      name="departureDate"
+                                    />
+                                    <label
+                                      class="col-form-label col-form-label-sm"
+                                      for="departureDate"
+                                      >Departure date?</label
+                                    >
+                                  </div>
+                                  <span
+                                    class="hide-on-desktop input-group-text"
+                                    id="checkoutDate"
+                                    ><i class="fa-solid fa-calendar-days"></i
+                                  ></span>
+                                </div>
+                              </div>
+
+                              <div class="col-md-2">
+                                <div class="input-group">
+                                  <div class="form-floating">
+                                    <input
+                                      type="date"
+                                      class="form-control form-control-sm"
+                                      placeholder="Return date?"
+                                      aria-label="Return date?"
+                                      aria-describedby="returnDate"
+                                      name="returnDate"
+                                    />
+                                    <label
+                                      class="col-form-label col-form-label-sm"
+                                      for="returnDate"
+                                      >Return date?</label
+                                    >
+                                  </div>
+                                  <span
+                                    class="hide-on-desktop input-group-text"
+                                    id="checkoutDate"
+                                    ><i class="fa-solid fa-calendar-days"></i
+                                  ></span>
+                                </div>
+                              </div>
+
+                              <div class="col-md-2">
+                                <div class="input-group">
+                                  <div class="form-floating">
+                                    <input
+                                      id="rt-travellersInput"
+                                      type="text"
+                                      class="form-control form-control-sm btn btn-secondary dropdown-toggle"
+                                      placeholder="Travellers?"
+                                      aria-label="Travellers?"
+                                      aria-describedby="travellers"
+                                      name="travellers"
+                                      data-bs-toggle="dropdown"
+                                      data-bs-auto-close="false"
+                                      aria-expanded="false"
+                                    />
+                                    <label
+                                      class="col-form-label col-form-label-sm"
+                                      for="travellers"
+                                      >Traveller(s)</label
+                                    >
+
+                                    <ul
+                                      style="font-size: 12px"
+                                      id="rt-drop"
+                                      class="dropdown-menu p-3"
+                                    >
+                                      <li class="dropdown-header p-0">
+                                        Who's travelling?
+                                      </li>
+                                      <li>
+                                        <table class="table table-borderless">
+                                          <tbody>
+                                            <tr>
+                                              <td colspan="3">
+                                                Adults<br /><span class="ages"
+                                                  >(> 12 years)</span
+                                                >
+                                              </td>
+                                              <td>
+                                                <a
+                                                  class="btn btn-sm travel-btn minus"
+                                                  id="rtAdultsMinus"
+                                                  onclick="rtaSubtract()"
+                                                  >-</a
+                                                >
+                                              </td>
+                                              <td>
+                                                <input
+                                                  maxlength="1"
+                                                  size="2"
+                                                  type="text"
+                                                  name="rtAdultsCount"
+                                                  id="rtAdultsCount"
+                                                  value="0"
+                                                />
+                                              </td>
+                                              <td>
+                                                <a
+                                                  class="btn btn-sm travel-btn plus"
+                                                  id="rtAdultsPlus"
+                                                  onclick="rtaAdd()"
+                                                  >+</a
+                                                >
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td colspan="3">
+                                                Children<br /><span class="ages"
+                                                  >(< 12 years)</span
+                                                >
+                                              </td>
+                                              <td>
+                                                <a
+                                                  class="btn btn-sm travel-btn minus"
+                                                  id="rtChildrenMinus"
+                                                  onclick="rtcSubtract()"
+                                                  >-</a
+                                                >
+                                              </td>
+                                              <td>
+                                                <input
+                                                  maxlength="1"
+                                                  size="2"
+                                                  type="text"
+                                                  name="rtChildrenCount"
+                                                  id="rtChildrenCount"
+                                                  value="0"
+                                                />
+                                              </td>
+                                              <td>
+                                                <a
+                                                  class="btn btn-sm travel-btn plus"
+                                                  id="rtChildrenPlus"
+                                                  onclick="rtcAdd()"
+                                                  >+</a
+                                                >
+                                              </td>
+                                            </tr>
+                                            <tr class="mb-2">
+                                              <td colspan="3">
+                                                Infants<br /><span class="ages"
+                                                  >(0 - 2 years)</span
+                                                >
+                                              </td>
+                                              <td>
+                                                <a
+                                                  class="btn btn-sm travel-btn minus"
+                                                  id="rtInfantsMinus"
+                                                  onclick="rtiSubtract()"
+                                                  >-</a
+                                                >
+                                              </td>
+                                              <td>
+                                                <input
+                                                  maxlength="1"
+                                                  size="2"
+                                                  type="text"
+                                                  name="rtInfantsCount"
+                                                  id="rtInfantsCount"
+                                                  value="0"
+                                                />
+                                              </td>
+                                              <td>
+                                                <a
+                                                  class="btn btn-sm travel-btn plus"
+                                                  id="rtInfantsPlus"
+                                                  onclick="rtiAdd()"
+                                                  >+</a
+                                                >
+                                              </td>
+                                            </tr>
+
+                                            <tr>
+                                              <td colspan="4">
+                                                <input
+                                                  type="radio"
+                                                  name="classOfFlight"
+                                                  value="All"
+                                                  id="all-flight"
+                                                />&nbsp;All
+                                              </td>
+                                              <td></td>
+                                            </tr>
+
+                                            <tr>
+                                              <td colspan="4">
+                                                <input
+                                                  type="radio"
+                                                  name="classOfFlight"
+                                                  value="Economy"
+                                                  id="economy"
+                                                  class="checked"
+                                                  checked
+                                                />&nbsp;Economy
+                                              </td>
+                                              <td></td>
+                                            </tr>
+
+                                            <tr>
+                                              <td colspan="4">
+                                                <input
+                                                  type="radio"
+                                                  name="classOfFlight"
+                                                  value="Premium"
+                                                  id="premium"
+                                                />&nbsp;Premium
+                                              </td>
+                                              <td></td>
+                                            </tr>
+
+                                            <tr>
+                                              <td colspan="4">
+                                                <input
+                                                  type="radio"
+                                                  name="classOfFlight"
+                                                  value="First"
+                                                  id="first"
+                                                />&nbsp;First
+                                              </td>
+                                              <td></td>
+                                            </tr>
+
+                                            <tr>
+                                              <td colspan="4">
+                                                <input
+                                                  type="radio"
+                                                  name="classOfFlight"
+                                                  value="Business"
+                                                  id="business"
+                                                />&nbsp;Business
+                                              </td>
+                                              <td
+                                                class="text-right"
+                                                rowspan="5"
+                                              >
+                                                <a
+                                                  id="rt-done-btn"
+                                                  type="button"
+                                                  name="rt-done-btn"
+                                                  class="btn btn-sm travel-btn done-btn"
+                                                  aria-label="Done"
+                                                  onclick="rtDone()"
+                                                  >Done</a
+                                                >
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <span class="input-group-text" id="travellers"
+                                    ><i class="fa-sharp fa-solid fa-users"></i
+                                  ></span>
+                                </div>
+                              </div>
+
+                              <div class="col-md-2 submit text-center">
+                                <button
+                                  class="btn btn-primary btn-lg homeSubmitBtn travel-btn"
+                                  name="submit"
+                                  type="submit"
+                                >
+                                  Search Flight
+                                </button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                        <!-- Round trip forms end -->
+
+                        <!-- One Way forms start -->
+                        <div
+                          class="tab-pane fade"
+                          id="oneWay"
+                          role="tabpanel"
+                          aria-labelledby="oneWay-tab"
+                          tabindex="0"
+                        >
+                          <form action="./oneWay/index.html">
+                            <div class="row gx-0">
+                              <div class="col-md-3">
+                                <div class="input-group">
+                                  <div class="form-floating">
+                                    <input
+                                      type="text"
+                                      class="form-control form-control-sm"
+                                      placeholder="Where from?"
+                                      aria-label="Where from?"
+                                      aria-describedby="whereFrom"
+                                      name="whereFrom"
+                                    />
+                                    <label
+                                      class="col-form-label col-form-label-sm"
+                                      for="whereFrom"
+                                      >Where from?</label
+                                    >
+                                  </div>
+                                  <span class="input-group-text" id="whereFrom"
+                                    ><i
+                                      class="fa-sharp fa-solid fa-plane-departure"
+                                    ></i
+                                  ></span>
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="input-group">
+                                  <div class="form-floating">
+                                    <input
+                                      type="text"
+                                      class="form-control form-control-sm"
+                                      placeholder="Where to?"
+                                      aria-label="Where to?"
+                                      aria-describedby="whereTo"
+                                      name="whereTo"
+                                    />
+                                    <label
+                                      class="col-form-label col-form-label-sm"
+                                      for="whereTo"
+                                      >Where to?</label
+                                    >
+                                  </div>
+                                  <span class="input-group-text" id="whereTo"
+                                    ><i
+                                      class="fa-sharp fa-solid fa-plane-arrival"
+                                    ></i
+                                  ></span>
+                                </div>
+                              </div>
+                              <div class="col-md-2">
+                                <div class="input-group">
+                                  <div class="form-floating">
+                                    <input
+                                      type="date"
+                                      class="form-control form-control-sm"
+                                      placeholder="Departure date?"
+                                      aria-label="Departure date?"
+                                      aria-describedby="departureDate"
+                                      name="departureDate"
+                                    />
+                                    <label
+                                      class="col-form-label col-form-label-sm"
+                                      for="departureDate"
+                                      >Departure date?</label
+                                    >
+                                  </div>
+                                  <span
+                                    class="hide-on-desktop input-group-text"
+                                    id="checkoutDate"
+                                    ><i class="fa-solid fa-calendar-days"></i
+                                  ></span>
+                                </div>
+                              </div>
+
+                              <div class="col-md-2">
+                                <div class="input-group">
+                                  <div class="form-floating">
+                                    <input
+                                      id="ow-travellersInput"
+                                      type="text"
+                                      class="form-control form-control-sm btn btn-secondary dropdown-toggle"
+                                      placeholder="Travellers?"
+                                      aria-label="Travellers?"
+                                      aria-describedby="travellers"
+                                      name="travellers"
+                                      data-bs-toggle="dropdown"
+                                      data-bs-auto-close="false"
+                                      aria-expanded="false"
+                                    />
+                                    <label
+                                      class="col-form-label col-form-label-sm"
+                                      for="travellers"
+                                      >Traveller(s)</label
+                                    >
+
+                                    <ul
+                                      style="font-size: 12px"
+                                      id="ow-drop"
+                                      class="dropdown-menu p-3"
+                                    >
+                                      <li class="dropdown-header p-0">
+                                        Who's travelling?
+                                      </li>
+                                      <li>
+                                        <table class="table table-borderless">
+                                          <tbody>
+                                            <tr>
+                                              <td colspan="3">
+                                                Adults<br /><span class="ages"
+                                                  >(> 12 years)</span
+                                                >
+                                              </td>
+                                              <td>
+                                                <a
+                                                  class="btn btn-sm travel-btn minus"
+                                                  id="owAdultsMinus"
+                                                  onclick="owaSubtract()"
+                                                  >-</a
+                                                >
+                                              </td>
+                                              <td>
+                                                <input
+                                                  maxlength="1"
+                                                  size="2"
+                                                  type="text"
+                                                  name="owAdultsCount"
+                                                  id="owAdultsCount"
+                                                  value="0"
+                                                />
+                                              </td>
+                                              <td>
+                                                <a
+                                                  class="btn btn-sm travel-btn plus"
+                                                  id="owAdultsPlus"
+                                                  onclick="owaAdd()"
+                                                  >+</a
+                                                >
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td colspan="3">
+                                                Children<br /><span class="ages"
+                                                  >(< 12 years)</span
+                                                >
+                                              </td>
+                                              <td>
+                                                <a
+                                                  class="btn btn-sm travel-btn minus"
+                                                  id="owChildrenMinus"
+                                                  onclick="owcSubtract()"
+                                                  >-</a
+                                                >
+                                              </td>
+                                              <td>
+                                                <input
+                                                  maxlength="1"
+                                                  size="2"
+                                                  type="text"
+                                                  name="owChildrenCount"
+                                                  id="owChildrenCount"
+                                                  value="0"
+                                                />
+                                              </td>
+                                              <td>
+                                                <a
+                                                  class="btn btn-sm travel-btn plus"
+                                                  id="owChildrenPlus"
+                                                  onclick="owcAdd()"
+                                                  >+</a
+                                                >
+                                              </td>
+                                            </tr>
+                                            <tr class="mb-2">
+                                              <td colspan="3">
+                                                Infants<br /><span class="ages"
+                                                  >(0 - 2 years)</span
+                                                >
+                                              </td>
+                                              <td>
+                                                <a
+                                                  class="btn btn-sm travel-btn minus"
+                                                  id="owInfantsMinus"
+                                                  onclick="owiSubtract()"
+                                                  >-</a
+                                                >
+                                              </td>
+                                              <td>
+                                                <input
+                                                  maxlength="1"
+                                                  size="2"
+                                                  type="text"
+                                                  name="owInfantsCount"
+                                                  id="owInfantsCount"
+                                                  value="0"
+                                                />
+                                              </td>
+                                              <td>
+                                                <a
+                                                  class="btn btn-sm travel-btn plus"
+                                                  id="owInfantsPlus"
+                                                  onclick="owiAdd()"
+                                                  >+</a
+                                                >
+                                              </td>
+                                            </tr>
+
+                                            <tr>
+                                              <td colspan="4">
+                                                <input
+                                                  type="radio"
+                                                  name="classOfFlight"
+                                                  value="All"
+                                                  id="all-flight"
+                                                />&nbsp;All
+                                              </td>
+                                              <td></td>
+                                            </tr>
+
+                                            <tr>
+                                              <td colspan="4">
+                                                <input
+                                                  type="radio"
+                                                  name="classOfFlight"
+                                                  value="Economy"
+                                                  id="economy"
+                                                  class="checked"
+                                                  checked
+                                                />&nbsp;Economy
+                                              </td>
+                                              <td></td>
+                                            </tr>
+
+                                            <tr>
+                                              <td colspan="4">
+                                                <input
+                                                  type="radio"
+                                                  name="classOfFlight"
+                                                  value="Premium"
+                                                  id="premium"
+                                                />&nbsp;Premium
+                                              </td>
+                                              <td></td>
+                                            </tr>
+
+                                            <tr>
+                                              <td colspan="4">
+                                                <input
+                                                  type="radio"
+                                                  name="classOfFlight"
+                                                  value="First"
+                                                  id="first"
+                                                />&nbsp;First
+                                              </td>
+                                              <td></td>
+                                            </tr>
+
+                                            <tr>
+                                              <td colspan="4">
+                                                <input
+                                                  type="radio"
+                                                  name="classOfFlight"
+                                                  value="Business"
+                                                  id="business"
+                                                />&nbsp;Business
+                                              </td>
+                                              <td
+                                                class="text-right"
+                                                rowspan="5"
+                                              >
+                                                <a
+                                                  id="ow-done-btn"
+                                                  type="button"
+                                                  name="ow-done-btn"
+                                                  class="btn btn-sm travel-btn done-btn"
+                                                  aria-label="Done"
+                                                  onclick="owDone()"
+                                                  >Done</a
+                                                >
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <span class="input-group-text" id="travellers"
+                                    ><i class="fa-sharp fa-solid fa-users"></i
+                                  ></span>
+                                </div>
+                              </div>
+
+                              <div class="col-md-2 submit text-center">
+                                <button
+                                  class="btn btn-primary btn-lg homeSubmitBtn travel-btn"
+                                  name="submit"
+                                  type="submit"
+                                >
+                                  Search Flight
+                                </button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                        <!-- One Way forms end -->
+
+                        <!-- Multi City forms start -->
+                        <div
+                          class="tab-pane fade"
+                          id="multiCity"
+                          role="tabpanel"
+                          aria-labelledby="multiCity-tab"
+                          tabindex="0"
+                        >
+                          <form action="./multiCity/index.html">
+                            <div id="multiCityOptions" class="row gx-0">
+                              <div class="col-md-3">
+                                <div class="input-group">
+                                  <div class="form-floating">
+                                    <input
+                                      type="text"
+                                      class="form-control form-control-sm"
+                                      placeholder="Where from?"
+                                      aria-label="Where from?"
+                                      aria-describedby="whereFrom2"
+                                      name="whereFrom2"
+                                    />
+                                    <label
+                                      class="col-form-label col-form-label-sm"
+                                      for="whereFrom2"
+                                      >Where from?</label
+                                    >
+                                  </div>
+                                  <span class="input-group-text" id="whereFrom2"
+                                    ><i
+                                      class="fa-sharp fa-solid fa-plane-departure"
+                                    ></i
+                                  ></span>
+                                </div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <div class="input-group">
+                                  <div class="form-floating">
+                                    <input
+                                      type="text"
+                                      class="form-control form-control-sm"
+                                      placeholder="Where to?"
+                                      aria-label="Where to?"
+                                      aria-describedby="whereTo2"
+                                      name="whereTo2"
+                                    />
+                                    <label
+                                      class="col-form-label col-form-label-sm"
+                                      for="whereTo2"
+                                      >Where to?</label
+                                    >
+                                  </div>
+                                  <span class="input-group-text" id="whereTo2"
+                                    ><i
+                                      class="fa-sharp fa-solid fa-plane-arrival"
+                                    ></i
+                                  ></span>
+                                </div>
+                              </div>
+
+                              <div class="col-md-2">
+                                <div class="input-group">
+                                  <div class="form-floating">
+                                    <input
+                                      type="date"
+                                      class="form-control form-control-sm"
+                                      placeholder="Departure date?"
+                                      aria-label="Departure date?"
+                                      aria-describedby="departureDate2"
+                                      name="departureDate2"
+                                    />
+                                    <label
+                                      class="col-form-label col-form-label-sm"
+                                      for="departureDate2"
+                                      >Departure date?</label
+                                    >
+                                  </div>
+                                  <span
+                                    class="hide-on-desktop input-group-text"
+                                    id="checkoutDate"
+                                    ><i class="fa-solid fa-calendar-days"></i
+                                  ></span>
+                                </div>
+                              </div>
+
+                              <div class="col-md-2"></div>
+
+                              <div class="col-md-2 text-center submit">
+                                <div class="row">
+                                  <div class="col p-1">
+                                    <a
+                                      class="btn btn-success addFlight btn-lg"
+                                      id="addFlight"
+                                      name="addFlight"
+                                      ><i class="fa-solid fa-plus"></i
+                                    ></a>
+                                  </div>
+                                  <div class="col p-1">
+                                    <a
+                                      class="btn btn-danger removeFlight btn-lg"
+                                      id="removeFlight"
+                                      name="removeFlight"
+                                      ><i class="fa-solid fa-x"></i
+                                    ></a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="moreFlight" id="moreFlight"></div>
+
+                            <div class="row gx-0">
+                              <div class="col-md-3">
+                                <div class="input-group">
+                                  <div class="form-floating">
+                                    <input
+                                      type="text"
+                                      class="form-control form-control-sm"
+                                      placeholder="Where from?"
+                                      aria-label="Where from?"
+                                      aria-describedby="whereFrom"
+                                      name="whereFrom"
+                                    />
+                                    <label
+                                      class="col-form-label col-form-label-sm"
+                                      for="whereFrom"
+                                      >Where from?</label
+                                    >
+                                  </div>
+                                  <span class="input-group-text" id="whereFrom"
+                                    ><i
+                                      class="fa-sharp fa-solid fa-plane-departure"
+                                    ></i
+                                  ></span>
+                                </div>
+                              </div>
+
+                              <div class="col-md-3">
+                                <div class="input-group">
+                                  <div class="form-floating">
+                                    <input
+                                      type="text"
+                                      class="form-control form-control-sm"
+                                      placeholder="Where to?"
+                                      aria-label="Where to?"
+                                      aria-describedby="whereTo"
+                                      name="whereTo"
+                                    />
+                                    <label
+                                      class="col-form-label col-form-label-sm"
+                                      for="whereTo"
+                                      >Where to?</label
+                                    >
+                                  </div>
+                                  <span class="input-group-text" id="whereTo"
+                                    ><i
+                                      class="fa-sharp fa-solid fa-plane-arrival"
+                                    ></i
+                                  ></span>
+                                </div>
+                              </div>
+
+                              <div class="col-md-2">
+                                <div class="input-group">
+                                  <div class="form-floating">
+                                    <input
+                                      type="date"
+                                      class="form-control form-control-sm"
+                                      placeholder="Departure date?"
+                                      aria-label="Departure date?"
+                                      aria-describedby="departureDate"
+                                      name="departureDate"
+                                    />
+                                    <label
+                                      class="col-form-label col-form-label-sm"
+                                      for="departureDate"
+                                      >Departure date?</label
+                                    >
+                                  </div>
+                                  <span
+                                    class="hide-on-desktop input-group-text"
+                                    id="checkoutDate"
+                                    ><i class="fa-solid fa-calendar-days"></i
+                                  ></span>
+                                </div>
+                              </div>
+
+                              <div class="col-md-2">
+                                <div class="input-group">
+                                  <div class="form-floating">
+                                    <input
+                                      id="mc-travellersInput"
+                                      type="text"
+                                      class="form-control form-control-sm btn btn-secondary dropdown-toggle"
+                                      placeholder="Travellers?"
+                                      aria-label="Travellers?"
+                                      aria-describedby="travellers"
+                                      name="travellers"
+                                      data-bs-toggle="dropdown"
+                                      data-bs-auto-close="false"
+                                      aria-expanded="false"
+                                    />
+                                    <label
+                                      class="col-form-label col-form-label-sm"
+                                      for="travellers"
+                                      >Traveller(s)</label
+                                    >
+
+                                    <ul
+                                      style="font-size: 12px"
+                                      id="mc-drop"
+                                      class="dropdown-menu p-3"
+                                    >
+                                      <li class="dropdown-header p-0">
+                                        Who's travelling?
+                                      </li>
+                                      <li>
+                                        <table class="table table-borderless">
+                                          <tbody>
+                                            <tr>
+                                              <td colspan="3">
+                                                Adults<br /><span class="ages"
+                                                  >(> 12 years)</span
+                                                >
+                                              </td>
+                                              <td>
+                                                <a
+                                                  class="btn btn-sm travel-btn minus"
+                                                  id="mcAdultsMinus"
+                                                  onclick="mcaSubtract()"
+                                                  >-</a
+                                                >
+                                              </td>
+                                              <td>
+                                                <input
+                                                  maxlength="1"
+                                                  size="2"
+                                                  type="text"
+                                                  name="mcAdultsCount"
+                                                  id="mcAdultsCount"
+                                                  value="0"
+                                                />
+                                              </td>
+                                              <td>
+                                                <a
+                                                  class="btn btn-sm travel-btn plus"
+                                                  id="mcAdultsPlus"
+                                                  onclick="mcaAdd()"
+                                                  >+</a
+                                                >
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td colspan="3">
+                                                Children<br /><span class="ages"
+                                                  >(< 12 years)</span
+                                                >
+                                              </td>
+                                              <td>
+                                                <a
+                                                  class="btn btn-sm travel-btn minus"
+                                                  id="mcChildrenMinus"
+                                                  onclick="mccSubtract()"
+                                                  >-</a
+                                                >
+                                              </td>
+                                              <td>
+                                                <input
+                                                  maxlength="1"
+                                                  size="2"
+                                                  type="text"
+                                                  name="mcChildrenCount"
+                                                  id="mcChildrenCount"
+                                                  value="0"
+                                                />
+                                              </td>
+                                              <td>
+                                                <a
+                                                  class="btn btn-sm travel-btn plus"
+                                                  id="mcChildrenPlus"
+                                                  onclick="mccAdd()"
+                                                  >+</a
+                                                >
+                                              </td>
+                                            </tr>
+                                            <tr class="mb-2">
+                                              <td colspan="3">
+                                                Infants<br /><span class="ages"
+                                                  >(0 - 2 years)</span
+                                                >
+                                              </td>
+                                              <td>
+                                                <a
+                                                  class="btn btn-sm travel-btn minus"
+                                                  id="mcInfantsMinus"
+                                                  onclick="mciSubtract()"
+                                                  >-</a
+                                                >
+                                              </td>
+                                              <td>
+                                                <input
+                                                  maxlength="1"
+                                                  size="2"
+                                                  type="text"
+                                                  name="mcInfantsCount"
+                                                  id="mcInfantsCount"
+                                                  value="0"
+                                                />
+                                              </td>
+                                              <td>
+                                                <a
+                                                  class="btn btn-sm travel-btn plus"
+                                                  id="mcInfantsPlus"
+                                                  onclick="mciAdd()"
+                                                  >+</a
+                                                >
+                                              </td>
+                                            </tr>
+
+                                            <tr>
+                                              <td colspan="4">
+                                                <input
+                                                  type="radio"
+                                                  name="classOfFlight"
+                                                  value="All"
+                                                  id="all-flight"
+                                                />&nbsp;All
+                                              </td>
+                                              <td></td>
+                                            </tr>
+
+                                            <tr>
+                                              <td colspan="4">
+                                                <input
+                                                  type="radio"
+                                                  name="classOfFlight"
+                                                  value="Economy"
+                                                  id="economy"
+                                                  class="checked"
+                                                  checked
+                                                />&nbsp;Economy
+                                              </td>
+                                              <td></td>
+                                            </tr>
+
+                                            <tr>
+                                              <td colspan="4">
+                                                <input
+                                                  type="radio"
+                                                  name="classOfFlight"
+                                                  value="Premium"
+                                                  id="premium"
+                                                />&nbsp;Premium
+                                              </td>
+                                              <td></td>
+                                            </tr>
+
+                                            <tr>
+                                              <td colspan="4">
+                                                <input
+                                                  type="radio"
+                                                  name="classOfFlight"
+                                                  value="First"
+                                                  id="first"
+                                                />&nbsp;First
+                                              </td>
+                                              <td></td>
+                                            </tr>
+
+                                            <tr>
+                                              <td colspan="4">
+                                                <input
+                                                  type="radio"
+                                                  name="classOfFlight"
+                                                  value="Business"
+                                                  id="business"
+                                                />&nbsp;Business
+                                              </td>
+                                              <td
+                                                class="text-right"
+                                                rowspan="5"
+                                              >
+                                                <a
+                                                  id="mc-done-btn"
+                                                  type="button"
+                                                  name="mc-done-btn"
+                                                  class="btn btn-sm travel-btn done-btn"
+                                                  aria-label="Done"
+                                                  onclick="mcDone()"
+                                                  >Done</a
+                                                >
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <span class="input-group-text" id="travellers"
+                                    ><i class="fa-sharp fa-solid fa-users"></i
+                                  ></span>
+                                </div>
+                              </div>
+
+                              <div class="col-md-2 submit text-center">
+                                <button
+                                  class="btn btn-primary btn-lg homeSubmitBtn travel-btn"
+                                  name="submit"
+                                  type="submit"
+                                >
+                                  Search Flight
+                                </button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                        <!-- Multi City forms end -->
+
+                        <!-- More flight options >> - start -->
+                        <div
+                          style="background-color: transparent"
+                          class="row more-flight-option"
+                        >
+                          <p class="text-center mb-0">
+                            <a
+                              class="btn advanced-options p-0 m-0 b-0"
+                              data-bs-toggle="collapse"
+                              href="#collapseExample"
+                              role="button"
+                              aria-expanded="false"
+                              aria-controls="collapseExample"
+                            >
+                              More flight options >>
+                            </a>
+                          </p>
+                          <div class="collapse px-3" id="collapseExample">
+                            <div class="row advanced-options-menu text-center">
+                              <div class="col-sm-2"></div>
+                              <div class="col-sm-8">
+                                <div class="row">
+                                  <div class="col-sm-4">
+                                    <input
+                                      type="checkbox"
+                                      name="plusMinus3"
+                                      id="plusMinus3"
+                                    />
+                                    <label
+                                      class="col-form-label col-form-label-sm"
+                                      for="plusMinus3"
+                                      >+/- 3 days search</label
+                                    >
+                                  </div>
+                                  <div class="col-sm-4">
+                                    <input
+                                      type="checkbox"
+                                      name="nonstop-flights"
+                                      id="nonstop-flights"
+                                    />
+                                    <label
+                                      class="col-form-label col-form-label-sm"
+                                      for="nonstop-flights"
+                                      >I prefer non-stop flights</label
+                                    >
+                                  </div>
+                                  <div class="col-sm-4">
+                                    <input
+                                      sty;e="width: 50px;"
+                                      class="form-control col-sm-3"
+                                      type="text"
+                                      name="preferred-airline"
+                                      id="preferred-airline"
+                                      placeholder="Preferred airline(s)"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-sm-2"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- More flight options >> - end -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Flight modes end -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div>
+          <div class="row">
+            <section style="font-size: 1em" class="airlinePriceCarousel">
+              <div class="card border p-0 border-0 w-100 airline-card">
+                <div class="card-body">
+                  <div class="owl-carousel owl-theme owl-loaded owl-drag">
+                    <div class="owl-stage-outer">
+                      <div
+                        class="owl-stage"
+                        style="
+                          transform: translate3d(-861px, 0px, 0px);
+                          transition: all 0s ease 0s;
+                          width: 100%;
+                        "
+                      >
+                        <div
+                          class="owl-item cloned"
+                          style="width: 277.333px; margin-right: 10px"
+                        >
+                          <div class="item">
+                            <figure>
+                              <a href="#">
+                                <div class="item-img">
+                                  <img
+                                    src="http://rest.resvoyage.com/content/airline-logos/AT.png"
+                                    alt="Airline"
+                                  />
+                                </div>
+                                <figcaption class="item-info">
+                                  <div class="item-name">
+                                    <small>Airline</small>
+                                  </div>
+                                  <div class="item-price">
+                                    <small>₦ 999,999.99</small>
+                                  </div>
+                                </figcaption>
+                              </a>
+                            </figure>
+                          </div>
+                        </div>
+                        <div
+                          class="owl-item cloned"
+                          style="width: 277.333px; margin-right: 10px"
+                        >
+                          <div class="item">
+                            <figure>
+                              <a href="#">
+                                <div class="item-img">
+                                  <img
+                                    src="http://rest.resvoyage.com/content/airline-logos/AT.png"
+                                    alt="Airline"
+                                  />
+                                </div>
+                                <figcaption class="item-info">
+                                  <div class="item-name">
+                                    <small>Airline</small>
+                                  </div>
+                                  <div class="item-price">
+                                    <small>₦ 999,999.99</small>
+                                  </div>
+                                </figcaption>
+                              </a>
+                            </figure>
+                          </div>
+                        </div>
+                        <div
+                          class="owl-item cloned"
+                          style="width: 277.333px; margin-right: 10px"
+                        >
+                          <div class="item">
+                            <figure>
+                              <a href="#">
+                                <div class="item-img">
+                                  <img
+                                    src="http://rest.resvoyage.com/content/airline-logos/AT.png"
+                                    alt="Airline"
+                                  />
+                                </div>
+                                <figcaption class="item-info">
+                                  <div class="item-name">
+                                    <small>Airline</small>
+                                  </div>
+                                  <div class="item-price">
+                                    <small>₦ 999,999.99</small>
+                                  </div>
+                                </figcaption>
+                              </a>
+                            </figure>
+                          </div>
+                        </div>
+                        <div
+                          class="owl-item active"
+                          style="width: 277.333px; margin-right: 10px"
+                        >
+                          <div class="item">
+                            <figure>
+                              <a href="#">
+                                <div class="item-img">
+                                  <img
+                                    src="http://rest.resvoyage.com/content/airline-logos/AT.png"
+                                    alt="Airline"
+                                  />
+                                </div>
+                                <figcaption class="item-info">
+                                  <div class="item-name">
+                                    <small>Airline</small>
+                                  </div>
+                                  <div class="item-price">
+                                    <small>₦ 999,999.99</small>
+                                  </div>
+                                </figcaption>
+                              </a>
+                            </figure>
+                          </div>
+                        </div>
+                        <div
+                          class="owl-item active"
+                          style="width: 277.333px; margin-right: 10px"
+                        >
+                          <div class="item">
+                            <figure>
+                              <a href="#">
+                                <div class="item-img">
+                                  <img
+                                    src="http://rest.resvoyage.com/content/airline-logos/AT.png"
+                                    alt="Airline"
+                                  />
+                                </div>
+                                <figcaption class="item-info">
+                                  <div class="item-name">
+                                    <small>Airline</small>
+                                  </div>
+                                  <div class="item-price">
+                                    <small>₦ 999,999.99</small>
+                                  </div>
+                                </figcaption>
+                              </a>
+                            </figure>
+                          </div>
+                        </div>
+                        <div
+                          class="owl-item active"
+                          style="width: 277.333px; margin-right: 10px"
+                        >
+                          <div class="item">
+                            <figure>
+                              <a href="#">
+                                <div class="item-img">
+                                  <img
+                                    src="http://rest.resvoyage.com/content/airline-logos/AT.png"
+                                    alt="Airline"
+                                  />
+                                </div>
+                                <figcaption class="item-info">
+                                  <div class="item-name">
+                                    <small>Airline</small>
+                                  </div>
+                                  <div class="item-price">
+                                    <small>₦ 999,999.99</small>
+                                  </div>
+                                </figcaption>
+                              </a>
+                            </figure>
+                          </div>
+                        </div>
+                        <div
+                          class="owl-item"
+                          style="width: 277.333px; margin-right: 10px"
+                        >
+                          <div class="item">
+                            <figure>
+                              <a href="#">
+                                <div class="item-img">
+                                  <img
+                                    src="http://rest.resvoyage.com/content/airline-logos/AT.png"
+                                    alt="Airline"
+                                  />
+                                </div>
+                                <figcaption class="item-info">
+                                  <div class="item-name">
+                                    <small>Airline</small>
+                                  </div>
+                                  <div class="item-price">
+                                    <small>₦ 999,999.99</small>
+                                  </div>
+                                </figcaption>
+                              </a>
+                            </figure>
+                          </div>
+                        </div>
+                        <div
+                          class="owl-item"
+                          style="width: 277.333px; margin-right: 10px"
+                        >
+                          <div class="item">
+                            <figure>
+                              <a href="#">
+                                <div class="item-img">
+                                  <img
+                                    src="http://rest.resvoyage.com/content/airline-logos/AT.png"
+                                    alt="Airline"
+                                  />
+                                </div>
+                                <figcaption class="item-info">
+                                  <div class="item-name">
+                                    <small>Airline</small>
+                                  </div>
+                                  <div class="item-price">
+                                    <small>₦ 999,999.99</small>
+                                  </div>
+                                </figcaption>
+                              </a>
+                            </figure>
+                          </div>
+                        </div>
+                        <div
+                          class="owl-item"
+                          style="width: 277.333px; margin-right: 10px"
+                        >
+                          <div class="item">
+                            <figure>
+                              <a href="#">
+                                <div class="item-img">
+                                  <img
+                                    src="http://rest.resvoyage.com/content/airline-logos/AT.png"
+                                    alt="Airline"
+                                  />
+                                </div>
+                                <figcaption class="item-info">
+                                  <div class="item-name">
+                                    <small>Airline</small>
+                                  </div>
+                                  <div class="item-price">
+                                    <small>₦ 999,999.99</small>
+                                  </div>
+                                </figcaption>
+                              </a>
+                            </figure>
+                          </div>
+                        </div>
+                        <div
+                          class="owl-item cloned"
+                          style="width: 277.333px; margin-right: 10px"
+                        >
+                          <div class="item">
+                            <figure>
+                              <a href="#">
+                                <div class="item-img">
+                                  <img
+                                    src="http://rest.resvoyage.com/content/airline-logos/AT.png"
+                                    alt="Airline"
+                                  />
+                                </div>
+                                <figcaption class="item-info">
+                                  <div class="item-name">
+                                    <small>Airline</small>
+                                  </div>
+                                  <div class="item-price">
+                                    <small>₦ 999,999.99</small>
+                                  </div>
+                                </figcaption>
+                              </a>
+                            </figure>
+                          </div>
+                        </div>
+                        <div
+                          class="owl-item cloned"
+                          style="width: 277.333px; margin-right: 10px"
+                        >
+                          <div class="item">
+                            <figure>
+                              <a href="#">
+                                <div class="item-img">
+                                  <img
+                                    src="http://rest.resvoyage.com/content/airline-logos/AT.png"
+                                    alt="Airline"
+                                  />
+                                </div>
+                                <figcaption class="item-info">
+                                  <div class="item-name">
+                                    <small>Airline</small>
+                                  </div>
+                                  <div class="item-price">
+                                    <small>₦ 999,999.99</small>
+                                  </div>
+                                </figcaption>
+                              </a>
+                            </figure>
+                          </div>
+                        </div>
+                        <div
+                          class="owl-item cloned"
+                          style="width: 277.333px; margin-right: 10px"
+                        >
+                          <div class="item">
+                            <figure>
+                              <a href="#">
+                                <div class="item-img">
+                                  <img
+                                    src="http://rest.resvoyage.com/content/airline-logos/AT.png"
+                                    alt="Airline"
+                                  />
+                                </div>
+                                <figcaption class="item-info">
+                                  <div class="item-name">
+                                    <small>Airline</small>
+                                  </div>
+                                  <div class="item-price">
+                                    <small>₦ 999,999.99</small>
+                                  </div>
+                                </figcaption>
+                              </a>
+                            </figure>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="owl-nav">
+                      <button
+                        type="button"
+                        role="presentation"
+                        class="owl-prev"
+                      >
+                        <span aria-label="Previous">‹</span></button
+                      ><button
+                        type="button"
+                        role="presentation"
+                        class="owl-next"
+                      >
+                        <span aria-label="Next">›</span>
+                      </button>
+                    </div>
+                    <div class="owl-dots disabled"></div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="p-0 col-sm-12 col-md-12 mobile-filterBy">
+            <div class="p-0 mb-3 container">
+              <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button
+                      class="accordion-button filterBy lead text-center"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseOne"
+                      aria-expanded="true"
+                      aria-controls="panelsStayOpen-collapseOne"
+                    >
+                      <span
+                        ><img
+                          class="img-fluid filter-by-svg"
+                          src="../assets/img/filter.svg"
+                          alt="Filter Icon" /></span
+                      >&nbsp;Filter by
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseOne"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingOne"
+                  >
+                    <div class="accordion-body p-0">
+                      <div class="row">
+                        <div class="card border border-0">
+                          <div class="card-body p-1">
+                            <div class="row d-flex text-center">
+                              <div class="col">
+                                <small class="mobile-filter-type-title"
+                                  >Flight</small
+                                ><br />
+                                <div>
+                                  <table class="table table-hover">
+                                    <tbody>
+                                      <tr>
+                                        <td>
+                                          <input
+                                            type="checkbox"
+                                            name="direct"
+                                            id="direct"
+                                          />&nbsp;Direct
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                          <span class="h6">£1,234.56</span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <input
+                                            type="checkbox"
+                                            name="oneStop"
+                                            id="oneStop"
+                                          />&nbsp;1 stop
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                          <span class="h6">£1,234.56</span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <input
+                                            type="checkbox"
+                                            name="oneStopPlus"
+                                            id="oneStopPlus"
+                                          />&nbsp;1 stop (+)
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                          <span class="h6">£1,234.56</span>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <small class="mobile-filter-type-title"
+                                  >Airlines</small
+                                >
+                                <div>
+                                  <table class="table table-hover">
+                                    <tbody>
+                                      <tr>
+                                        <td>
+                                          <input
+                                            type="checkbox"
+                                            name=""
+                                            id=""
+                                          />&nbsp;Arik Air
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                          <span class="h6">£1,234.56</span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <input
+                                            type="checkbox"
+                                            name=""
+                                            id=""
+                                          />&nbsp;Air peace
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                          <span class="h6">£1,234.56</span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <input
+                                            type="checkbox"
+                                            name=""
+                                            id=""
+                                          />&nbsp;Ibom Air
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                          <span class="h6">£1,234.56</span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <input
+                                            type="checkbox"
+                                            name=""
+                                            id=""
+                                          />&nbsp;Lufthansa
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                          <span class="h6">£1,234.56</span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <input
+                                            type="checkbox"
+                                            name=""
+                                            id=""
+                                          />&nbsp;KLM
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                          <span class="h6">£1,234.56</span>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <small class="mobile-filter-type-title"
+                                  >Flight Times</small
+                                >
+                                <div>
+                                  <table class="table table-hover">
+                                    <tbody>
+                                      <tr>
+                                        <td>
+                                          <input
+                                            type="checkbox"
+                                            name="morning"
+                                            id="morning"
+                                          />&nbsp;Morning
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                          <span class="h6">£1,234.56</span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <input
+                                            type="checkbox"
+                                            name="afternoon"
+                                            id="afternoon"
+                                          />&nbsp;Afternoon
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                          <span class="h6">£1,234.56</span>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <input
+                                            type="checkbox"
+                                            name="night"
+                                            id="night"
+                                          />&nbsp;Night
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                          <span class="h6">£1,234.56</span>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <p>
+                                    <button
+                                      class="btn btn-sm travel-btn filterBy text-center"
+                                      type="button"
+                                      data-bs-toggle="collapse"
+                                      data-bs-target="#panelsStayOpen-collapseOne"
+                                      aria-expanded="true"
+                                      aria-controls="panelsStayOpen-collapseOne"
+                                    >
+                                      Apply Filter
+                                    </button>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            style="padding-left: 0; height: auto"
+            class="col-md-3 desktop-filterBy"
+          >
+            <div class="filterBy">
+              <p class="lead">
+                <span
+                  ><img
+                    class="img-fluid filter-by-svg"
+                    src="../assets/img/filter.svg"
+                    alt="Filter Icon" /></span
+                >&nbsp;Filter by
+              </p>
+            </div>
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseOne"
+                    aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne"
+                  >
+                    Flights
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="panelsStayOpen-headingOne"
+                >
+                  <div class="accordion-body">
+                    <table class="table table-hover">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <input
+                              type="checkbox"
+                              name="direct"
+                              id="direct"
+                            />&nbsp;Direct
+                          </td>
+                          <td></td>
+                          <td><span class="h6">£1,234.56</span></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input
+                              type="checkbox"
+                              name="oneStop"
+                              id="oneStop"
+                            />&nbsp;1 stop
+                          </td>
+                          <td></td>
+                          <td><span class="h6">£1,234.56</span></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input
+                              type="checkbox"
+                              name="oneStopPlus"
+                              id="oneStopPlus"
+                            />&nbsp;1 stop (+)
+                          </td>
+                          <td></td>
+                          <td><span class="h6">£1,234.56</span></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseTwo"
+                  >
+                    Airlines
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingTwo"
+                >
+                  <div class="accordion-body">
+                    <table class="table table-hover">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <input type="checkbox" name="" id="" />&nbsp;Arik
+                            Air
+                          </td>
+                          <td></td>
+                          <td><span class="h6">£1,234.56</span></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" name="" id="" />&nbsp;Air
+                            peace
+                          </td>
+                          <td></td>
+                          <td><span class="h6">£1,234.56</span></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" name="" id="" />&nbsp;Ibom
+                            Air
+                          </td>
+                          <td></td>
+                          <td><span class="h6">£1,234.56</span></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input
+                              type="checkbox"
+                              name=""
+                              id=""
+                            />&nbsp;Lufthansa
+                          </td>
+                          <td></td>
+                          <td><span class="h6">£1,234.56</span></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" name="" id="" />&nbsp;KLM
+                          </td>
+                          <td></td>
+                          <td><span class="h6">£1,234.56</span></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseThree"
+                  >
+                    Flight times
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingThree"
+                >
+                  <div class="accordion-body">
+                    <table class="table table-hover">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <input
+                              type="checkbox"
+                              name="morning"
+                              id="morning"
+                            />&nbsp;Morning
+                          </td>
+                          <td></td>
+                          <td><span class="h6">£1,234.56</span></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input
+                              type="checkbox"
+                              name="afternoon"
+                              id="afternoon"
+                            />&nbsp;Afternoon
+                          </td>
+                          <td></td>
+                          <td><span class="h6">£1,234.56</span></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input
+                              type="checkbox"
+                              name="night"
+                              id="night"
+                            />&nbsp;Night
+                          </td>
+                          <td></td>
+                          <td><span class="h6">£1,234.56</span></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            style="background-color: white; height: auto"
+            class="p-0 col-sm-12 col-md-9"
+          >
+            <div class="table-responsive">
+              <table class="table table-borderless">
+                <thead>
+                  <tr class="text-center">
+                    <th scope="col">Airline</th>
+                    <th scope="col">Departure</th>
+                    <th scope="col"></th>
+                    <th scope="col">Arrival</th>
+                    <th scope="col">Price</th>
+                  </tr>
+                </thead>
+                <tbody class="align-items-center">
+                  <div class="query-items">
+                    <tr>
+                      <td class="direction m-0" colspan="4">
+                        <p class="m-0 p-1 direction h5">
+                          <span
+                            ><img
+                              class="outbound-plane"
+                              src="../assets/img/plane.svg"
+                              alt="Outbound plane" /></span
+                          >Departure
+                        </p>
+                      </td>
+                      <td class="price-select" rowspan="6">
+                        <div class="text-center">
+                          <div class="h6">Multi City | Economy</div>
+                          <div style="color: rgb(167, 16, 16)" class="h3">
+                            £1125.16
+                          </div>
+                          <div class="h6">per person</div>
+                          <div class="h6">includes tax & fees</div>
+                          <a
+                            href="../passengerInformation/multiCity.html"
+                            class="btn btn-primary travel-btn"
+                          >
+                            Select&nbsp;<i class="fa-solid fa-angle-right"></i>
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="text-center">
+                      <th scope="row">
+                        <div>
+                          <div class="h6">
+                            <img
+                              src="../assets/img/virgin-altantic.png"
+                              alt="aero"
+                              class="airline-logos-result img-fluid"
+                            />&nbsp;Virgin Atlantic
+                          </div>
+                          <div class="h6">
+                            <span
+                              ><img
+                                src="../assets/img/briefcase.svg"
+                                alt="Brief case"
+                                class="img-fluid brief-case" /></span
+                            >&nbsp;2 piece(s)
+                          </div>
+                        </div>
+                      </th>
+                      <td>
+                        <div>
+                          <small>LONDON (LHR)</small>
+                          <div class="h6">Sat., 23 Jul., 2022 22:30</div>
+                        </div>
+                      </td>
+                      <td class="bounds">
+                        <div class="h6 p-0 m-0">06h 30mins</div>
+                        <div class="h6">
+                          <span
+                            ><img
+                              src="../assets/img/arrow.png"
+                              alt=""
+                              class="img-fluid arrow arrow-right"
+                          /></span>
+                        </div>
+                        <div class="flight-btn btn btn primary h6">Direct</div>
+                      </td>
+                      <td>
+                        <div>
+                          <small>LAGOS (LOS)</small>
+                          <div class="h6">Sun., 24 Jul., 2022 05:00</div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="direction m-0" colspan="4">
+                        <p class="m-0 p-1 direction h5">
+                          <span
+                            ><img
+                              class="outbound-plane"
+                              src="../assets/img/plane.svg"
+                              alt="outbound-plane" /></span
+                          >Departure
+                        </p>
+                      </td>
+                    </tr>
+                    <tr class="text-center">
+                      <th scope="row">
+                        <div>
+                          <div class="h6">
+                            <img
+                              src="../assets/img/virgin-altantic.png"
+                              alt="aero"
+                              class="airline-logos-result img-fluid"
+                            />&nbsp;Virgin Atlantic
+                          </div>
+                          <div class="h6">
+                            <span
+                              ><img
+                                src="../assets/img/briefcase.svg"
+                                alt="Brief case"
+                                class="img-fluid brief-case" /></span
+                            >&nbsp;2 piece(s)
+                          </div>
+                        </div>
+                      </th>
+                      <td>
+                        <div>
+                          <small>LAGOS (LOS)</small>
+                          <div class="h6">Wed., 03 Aug., 2022 09:05</div>
+                        </div>
+                      </td>
+                      <td class="bounds">
+                        <div class="h6 p-0 m-0">01h 30mins</div>
+                        <div class="h6">
+                          <span
+                            ><img
+                              src="../assets/img/arrow.png"
+                              alt=""
+                              class="img-fluid arrow arrow-right"
+                          /></span>
+                        </div>
+                        <div class="flight-btn btn btn primary h6">Direct</div>
+                      </td>
+                      <td>
+                        <div>
+                          <small>LONDON (LHR)</small>
+                          <div class="h6">Wed., 03 Aug., 2022 15:35</div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="direction m-0" colspan="4">
+                        <p class="m-0 p-1 direction h5">
+                          <span
+                            ><img
+                              class="outbound-plane"
+                              src="../assets/img/plane.svg"
+                              alt="outbound-plane" /></span
+                          >Departure
+                        </p>
+                      </td>
+                    </tr>
+                    <tr class="has-border text-center">
+                      <th scope="row">
+                        <div>
+                          <div class="h6">
+                            <img
+                              src="../assets/img/virgin-altantic.png"
+                              alt="aero"
+                              class="airline-logos-result img-fluid"
+                            />&nbsp;Virgin Atlantic
+                          </div>
+                          <div class="h6">
+                            <span
+                              ><img
+                                src="../assets/img/briefcase.svg"
+                                alt="Brief case"
+                                class="img-fluid brief-case" /></span
+                            >&nbsp;2 piece(s)
+                          </div>
+                        </div>
+                      </th>
+                      <td>
+                        <div>
+                          <small>LAGOS (LOS)</small>
+                          <div class="h6">Wed., 03 Aug., 2022 09:05</div>
+                        </div>
+                      </td>
+                      <td class="bounds">
+                        <div class="h6 p-0 m-0">01h 30mins</div>
+                        <div class="h6">
+                          <span
+                            ><img
+                              src="../assets/img/arrow.png"
+                              alt=""
+                              class="img-fluid arrow arrow-right"
+                          /></span>
+                        </div>
+                        <div class="flight-btn btn btn primary h6">Direct</div>
+                      </td>
+                      <td>
+                        <div>
+                          <small>LONDON (LHR)</small>
+                          <div class="h6">Wed., 03 Aug., 2022 15:35</div>
+                        </div>
+                      </td>
+                    </tr>
+                  </div>
+
+                  <div class="query-items">
+                    <tr>
+                      <td class="direction m-0" colspan="4">
+                        <p class="m-0 p-1 direction h5">
+                          <span
+                            ><img
+                              class="outbound-plane"
+                              src="../assets/img/plane.svg"
+                              alt="Outbound plane" /></span
+                          >Departure
+                        </p>
+                      </td>
+                      <td class="price-select" rowspan="6">
+                        <div class="text-center">
+                          <div class="h6">Multi City | Economy</div>
+                          <div style="color: rgb(167, 16, 16)" class="h3">
+                            £1125.16
+                          </div>
+                          <div class="h6">per person</div>
+                          <div class="h6">includes tax & fees</div>
+                          <a
+                            href="../passengerInformation/multiCity.html"
+                            class="btn btn-primary travel-btn"
+                          >
+                            Select&nbsp;<i class="fa-solid fa-angle-right"></i>
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="text-center">
+                      <th scope="row">
+                        <div>
+                          <div class="h6">
+                            <img
+                              src="../assets/img/virgin-altantic.png"
+                              alt="aero"
+                              class="airline-logos-result img-fluid"
+                            />&nbsp;Virgin Atlantic
+                          </div>
+                          <div class="h6">
+                            <span
+                              ><img
+                                src="../assets/img/briefcase.svg"
+                                alt="Brief case"
+                                class="img-fluid brief-case" /></span
+                            >&nbsp;2 piece(s)
+                          </div>
+                        </div>
+                      </th>
+                      <td>
+                        <div>
+                          <small>LONDON (LHR)</small>
+                          <div class="h6">Sat., 23 Jul., 2022 22:30</div>
+                        </div>
+                      </td>
+                      <td class="bounds">
+                        <div class="h6 p-0 m-0">06h 30mins</div>
+                        <div class="h6">
+                          <span
+                            ><img
+                              src="../assets/img/arrow.png"
+                              alt=""
+                              class="img-fluid arrow arrow-right"
+                          /></span>
+                        </div>
+                        <div class="flight-btn btn btn primary h6">Direct</div>
+                      </td>
+                      <td>
+                        <div>
+                          <small>LAGOS (LOS)</small>
+                          <div class="h6">Sun., 24 Jul., 2022 05:00</div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="direction m-0" colspan="4">
+                        <p class="m-0 p-1 direction h5">
+                          <span
+                            ><img
+                              class="outbound-plane"
+                              src="../assets/img/plane.svg"
+                              alt="outbound-plane" /></span
+                          >Departure
+                        </p>
+                      </td>
+                    </tr>
+                    <tr class="text-center">
+                      <th scope="row">
+                        <div>
+                          <div class="h6">
+                            <img
+                              src="../assets/img/virgin-altantic.png"
+                              alt="aero"
+                              class="airline-logos-result img-fluid"
+                            />&nbsp;Virgin Atlantic
+                          </div>
+                          <div class="h6">
+                            <span
+                              ><img
+                                src="../assets/img/briefcase.svg"
+                                alt="Brief case"
+                                class="img-fluid brief-case" /></span
+                            >&nbsp;2 piece(s)
+                          </div>
+                        </div>
+                      </th>
+                      <td>
+                        <div>
+                          <small>LAGOS (LOS)</small>
+                          <div class="h6">Wed., 03 Aug., 2022 09:05</div>
+                        </div>
+                      </td>
+                      <td class="bounds">
+                        <div class="h6 p-0 m-0">01h 30mins</div>
+                        <div class="h6">
+                          <span
+                            ><img
+                              src="../assets/img/arrow.png"
+                              alt=""
+                              class="img-fluid arrow arrow-right"
+                          /></span>
+                        </div>
+                        <div class="flight-btn btn btn primary h6">Direct</div>
+                      </td>
+                      <td>
+                        <div>
+                          <small>LONDON (LHR)</small>
+                          <div class="h6">Wed., 03 Aug., 2022 15:35</div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="direction m-0" colspan="4">
+                        <p class="m-0 p-1 direction h5">
+                          <span
+                            ><img
+                              class="outbound-plane"
+                              src="../assets/img/plane.svg"
+                              alt="outbound-plane" /></span
+                          >Departure
+                        </p>
+                      </td>
+                    </tr>
+                    <tr class="has-border text-center">
+                      <th scope="row">
+                        <div>
+                          <div class="h6">
+                            <img
+                              src="../assets/img/virgin-altantic.png"
+                              alt="aero"
+                              class="airline-logos-result img-fluid"
+                            />&nbsp;Virgin Atlantic
+                          </div>
+                          <div class="h6">
+                            <span
+                              ><img
+                                src="../assets/img/briefcase.svg"
+                                alt="Brief case"
+                                class="img-fluid brief-case" /></span
+                            >&nbsp;2 piece(s)
+                          </div>
+                        </div>
+                      </th>
+                      <td>
+                        <div>
+                          <small>LAGOS (LOS)</small>
+                          <div class="h6">Wed., 03 Aug., 2022 09:05</div>
+                        </div>
+                      </td>
+                      <td class="bounds">
+                        <div class="h6 p-0 m-0">01h 30mins</div>
+                        <div class="h6">
+                          <span
+                            ><img
+                              src="../assets/img/arrow.png"
+                              alt=""
+                              class="img-fluid arrow arrow-right"
+                          /></span>
+                        </div>
+                        <div class="flight-btn btn btn primary h6">Direct</div>
+                      </td>
+                      <td>
+                        <div>
+                          <small>LONDON (LHR)</small>
+                          <div class="h6">Wed., 03 Aug., 2022 15:35</div>
+                        </div>
+                      </td>
+                    </tr>
+                  </div>
+
+                  <div class="query-items">
+                    <tr>
+                      <td class="direction m-0" colspan="4">
+                        <p class="m-0 p-1 direction h5">
+                          <span
+                            ><img
+                              class="outbound-plane"
+                              src="../assets/img/plane.svg"
+                              alt="Outbound plane" /></span
+                          >Departure
+                        </p>
+                      </td>
+                      <td class="price-select" rowspan="6">
+                        <div class="text-center">
+                          <div class="h6">Multi City | Economy</div>
+                          <div style="color: rgb(167, 16, 16)" class="h3">
+                            £1125.16
+                          </div>
+                          <div class="h6">per person</div>
+                          <div class="h6">includes tax & fees</div>
+                          <a
+                            href="../passengerInformation/multiCity.html"
+                            class="btn btn-primary travel-btn"
+                          >
+                            Select&nbsp;<i class="fa-solid fa-angle-right"></i>
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="text-center">
+                      <th scope="row">
+                        <div>
+                          <div class="h6">
+                            <img
+                              src="../assets/img/virgin-altantic.png"
+                              alt="aero"
+                              class="airline-logos-result img-fluid"
+                            />&nbsp;Virgin Atlantic
+                          </div>
+                          <div class="h6">
+                            <span
+                              ><img
+                                src="../assets/img/briefcase.svg"
+                                alt="Brief case"
+                                class="img-fluid brief-case" /></span
+                            >&nbsp;2 piece(s)
+                          </div>
+                        </div>
+                      </th>
+                      <td>
+                        <div>
+                          <small>LONDON (LHR)</small>
+                          <div class="h6">Sat., 23 Jul., 2022 22:30</div>
+                        </div>
+                      </td>
+                      <td class="bounds">
+                        <div class="h6 p-0 m-0">06h 30mins</div>
+                        <div class="h6">
+                          <span
+                            ><img
+                              src="../assets/img/arrow.png"
+                              alt=""
+                              class="img-fluid arrow arrow-right"
+                          /></span>
+                        </div>
+                        <div class="flight-btn btn btn primary h6">Direct</div>
+                      </td>
+                      <td>
+                        <div>
+                          <small>LAGOS (LOS)</small>
+                          <div class="h6">Sun., 24 Jul., 2022 05:00</div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="direction m-0" colspan="4">
+                        <p class="m-0 p-1 direction h5">
+                          <span
+                            ><img
+                              class="outbound-plane"
+                              src="../assets/img/plane.svg"
+                              alt="outbound-plane" /></span
+                          >Departure
+                        </p>
+                      </td>
+                    </tr>
+                    <tr class="text-center">
+                      <th scope="row">
+                        <div>
+                          <div class="h6">
+                            <img
+                              src="../assets/img/virgin-altantic.png"
+                              alt="aero"
+                              class="airline-logos-result img-fluid"
+                            />&nbsp;Virgin Atlantic
+                          </div>
+                          <div class="h6">
+                            <span
+                              ><img
+                                src="../assets/img/briefcase.svg"
+                                alt="Brief case"
+                                class="img-fluid brief-case" /></span
+                            >&nbsp;2 piece(s)
+                          </div>
+                        </div>
+                      </th>
+                      <td>
+                        <div>
+                          <small>LAGOS (LOS)</small>
+                          <div class="h6">Wed., 03 Aug., 2022 09:05</div>
+                        </div>
+                      </td>
+                      <td class="bounds">
+                        <div class="h6 p-0 m-0">01h 30mins</div>
+                        <div class="h6">
+                          <span
+                            ><img
+                              src="../assets/img/arrow.png"
+                              alt=""
+                              class="img-fluid arrow arrow-right"
+                          /></span>
+                        </div>
+                        <div class="flight-btn btn btn primary h6">Direct</div>
+                      </td>
+                      <td>
+                        <div>
+                          <small>LONDON (LHR)</small>
+                          <div class="h6">Wed., 03 Aug., 2022 15:35</div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="direction m-0" colspan="4">
+                        <p class="m-0 p-1 direction h5">
+                          <span
+                            ><img
+                              class="outbound-plane"
+                              src="../assets/img/plane.svg"
+                              alt="outbound-plane" /></span
+                          >Departure
+                        </p>
+                      </td>
+                    </tr>
+                    <tr class="has-border text-center">
+                      <th scope="row">
+                        <div>
+                          <div class="h6">
+                            <img
+                              src="../assets/img/virgin-altantic.png"
+                              alt="aero"
+                              class="airline-logos-result img-fluid"
+                            />&nbsp;Virgin Atlantic
+                          </div>
+                          <div class="h6">
+                            <span
+                              ><img
+                                src="../assets/img/briefcase.svg"
+                                alt="Brief case"
+                                class="img-fluid brief-case" /></span
+                            >&nbsp;2 piece(s)
+                          </div>
+                        </div>
+                      </th>
+                      <td>
+                        <div>
+                          <small>LAGOS (LOS)</small>
+                          <div class="h6">Wed., 03 Aug., 2022 09:05</div>
+                        </div>
+                      </td>
+                      <td class="bounds">
+                        <div class="h6 p-0 m-0">01h 30mins</div>
+                        <div class="h6">
+                          <span
+                            ><img
+                              src="../assets/img/arrow.png"
+                              alt=""
+                              class="img-fluid arrow arrow-right"
+                          /></span>
+                        </div>
+                        <div class="flight-btn btn btn primary h6">Direct</div>
+                      </td>
+                      <td>
+                        <div>
+                          <small>LONDON (LHR)</small>
+                          <div class="h6">Wed., 03 Aug., 2022 15:35</div>
+                        </div>
+                      </td>
+                    </tr>
+                  </div>
+
+                  <div class="query-items">
+                    <tr>
+                      <td class="direction m-0" colspan="4">
+                        <p class="m-0 p-1 direction h5">
+                          <span
+                            ><img
+                              class="outbound-plane"
+                              src="../assets/img/plane.svg"
+                              alt="Outbound plane" /></span
+                          >Departure
+                        </p>
+                      </td>
+                      <td class="price-select" rowspan="6">
+                        <div class="text-center">
+                          <div class="h6">Multi City | Economy</div>
+                          <div style="color: rgb(167, 16, 16)" class="h3">
+                            £1125.16
+                          </div>
+                          <div class="h6">per person</div>
+                          <div class="h6">includes tax & fees</div>
+                          <a
+                            href="../passengerInformation/multiCity.html"
+                            class="btn btn-primary travel-btn"
+                          >
+                            Select&nbsp;<i class="fa-solid fa-angle-right"></i>
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="text-center">
+                      <th scope="row">
+                        <div>
+                          <div class="h6">
+                            <img
+                              src="../assets/img/virgin-altantic.png"
+                              alt="aero"
+                              class="airline-logos-result img-fluid"
+                            />&nbsp;Virgin Atlantic
+                          </div>
+                          <div class="h6">
+                            <span
+                              ><img
+                                src="../assets/img/briefcase.svg"
+                                alt="Brief case"
+                                class="img-fluid brief-case" /></span
+                            >&nbsp;2 piece(s)
+                          </div>
+                        </div>
+                      </th>
+                      <td>
+                        <div>
+                          <small>LONDON (LHR)</small>
+                          <div class="h6">Sat., 23 Jul., 2022 22:30</div>
+                        </div>
+                      </td>
+                      <td class="bounds">
+                        <div class="h6 p-0 m-0">06h 30mins</div>
+                        <div class="h6">
+                          <span
+                            ><img
+                              src="../assets/img/arrow.png"
+                              alt=""
+                              class="img-fluid arrow arrow-right"
+                          /></span>
+                        </div>
+                        <div class="flight-btn btn btn primary h6">Direct</div>
+                      </td>
+                      <td>
+                        <div>
+                          <small>LAGOS (LOS)</small>
+                          <div class="h6">Sun., 24 Jul., 2022 05:00</div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="direction m-0" colspan="4">
+                        <p class="m-0 p-1 direction h5">
+                          <span
+                            ><img
+                              class="outbound-plane"
+                              src="../assets/img/plane.svg"
+                              alt="outbound-plane" /></span
+                          >Departure
+                        </p>
+                      </td>
+                    </tr>
+                    <tr class="text-center">
+                      <th scope="row">
+                        <div>
+                          <div class="h6">
+                            <img
+                              src="../assets/img/virgin-altantic.png"
+                              alt="aero"
+                              class="airline-logos-result img-fluid"
+                            />&nbsp;Virgin Atlantic
+                          </div>
+                          <div class="h6">
+                            <span
+                              ><img
+                                src="../assets/img/briefcase.svg"
+                                alt="Brief case"
+                                class="img-fluid brief-case" /></span
+                            >&nbsp;2 piece(s)
+                          </div>
+                        </div>
+                      </th>
+                      <td>
+                        <div>
+                          <small>LAGOS (LOS)</small>
+                          <div class="h6">Wed., 03 Aug., 2022 09:05</div>
+                        </div>
+                      </td>
+                      <td class="bounds">
+                        <div class="h6 p-0 m-0">01h 30mins</div>
+                        <div class="h6">
+                          <span
+                            ><img
+                              src="../assets/img/arrow.png"
+                              alt=""
+                              class="img-fluid arrow arrow-right"
+                          /></span>
+                        </div>
+                        <div class="flight-btn btn btn primary h6">Direct</div>
+                      </td>
+                      <td>
+                        <div>
+                          <small>LONDON (LHR)</small>
+                          <div class="h6">Wed., 03 Aug., 2022 15:35</div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="direction m-0" colspan="4">
+                        <p class="m-0 p-1 direction h5">
+                          <span
+                            ><img
+                              class="outbound-plane"
+                              src="../assets/img/plane.svg"
+                              alt="outbound-plane" /></span
+                          >Departure
+                        </p>
+                      </td>
+                    </tr>
+                    <tr class="has-border text-center">
+                      <th scope="row">
+                        <div>
+                          <div class="h6">
+                            <img
+                              src="../assets/img/virgin-altantic.png"
+                              alt="aero"
+                              class="airline-logos-result img-fluid"
+                            />&nbsp;Virgin Atlantic
+                          </div>
+                          <div class="h6">
+                            <span
+                              ><img
+                                src="../assets/img/briefcase.svg"
+                                alt="Brief case"
+                                class="img-fluid brief-case" /></span
+                            >&nbsp;2 piece(s)
+                          </div>
+                        </div>
+                      </th>
+                      <td>
+                        <div>
+                          <small>LAGOS (LOS)</small>
+                          <div class="h6">Wed., 03 Aug., 2022 09:05</div>
+                        </div>
+                      </td>
+                      <td class="bounds">
+                        <div class="h6 p-0 m-0">01h 30mins</div>
+                        <div class="h6">
+                          <span
+                            ><img
+                              src="../assets/img/arrow.png"
+                              alt=""
+                              class="img-fluid arrow arrow-right"
+                          /></span>
+                        </div>
+                        <div class="flight-btn btn btn primary h6">Direct</div>
+                      </td>
+                      <td>
+                        <div>
+                          <small>LONDON (LHR)</small>
+                          <div class="h6">Wed., 03 Aug., 2022 15:35</div>
+                        </div>
+                      </td>
+                    </tr>
+                  </div>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <footer>
+        <div class="container-fluid p-3">
+          <div class="row text-center">
+            <div class="col-sm-3 text-left">
+              <div class="img-logo text-center">
+                <img
+                  class="pt-5"
+                  src="../assets/img/logo-white.jpeg"
+                  alt="Travel Explorer"
+                  style="width: 200px"
+                />
+              </div>
+              <div class="row pt-3 text-center">
+                <div class="col">
+                  <img
+                    class="footer-img iata"
+                    src="../assets/img/iata.svg"
+                    alt="IATA"
+                  />
+                </div>
+                <div class="col">
+                  <img
+                    class="footer-img support"
+                    src="../assets/img/247support.jpeg"
+                    alt="247 Support"
+                  />
+                </div>
+                <div class="col">
+                  <img
+                    class="footer-img service-quality-guarantee"
+                    src="../assets/img/service-quality.png"
+                    alt="Service Quality Guarantee"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 p-3 text-left">
+              <h4>Get In Touch</h4>
+              <p class="border"></p>
+              <p>
+                <i class="fa-solid fa-location-dot"></i>&nbsp;Address : 24,
+                Allen Avenue, Ikeja, Lagos.
+              </p>
+              <p>
+                <i class="fa-solid fa-phone"></i>&nbsp;Telephone:
+                <a
+                  style="color: #ffffff; text-decoration: none"
+                  href="tel:+2347083620472"
+                  >+234 708 362 0472</a
+                >
+              </p>
+              <p>
+                <i class="fa-solid fa-envelope"></i>&nbsp;Email:
+                <a
+                  style="color: #ffffff; text-decoration: none"
+                  href="mailto:travel@travelexplorer.com"
+                  >travel@travelexplorer.com</a
+                >
+              </p>
+            </div>
+            <div class="col-sm-3 p-3 text-left">
+              <h4>Quick Maps</h4>
+              <p class="border"></p>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a
+                    class="nav-link quickMaps pt-0"
+                    aria-current="page"
+                    href="../"
+                  >
+                    <div class="quickMapsLink">Home</div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link quickMaps"
+                    aria-current="page"
+                    href="../services/index.html"
+                  >
+                    <div class="quickMapsLink">Services</div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link quickMaps"
+                    aria-current="page"
+                    href="../about/index.html"
+                  >
+                    <div class="quickMapsLink">About us</div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link quickMaps"
+                    aria-current="page"
+                    href="../contact/index.html"
+                  >
+                    <div class="quickMapsLink">Contact</div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-3 p-3 text-left">
+              <h4>Reference Links</h4>
+              <p class="border"></p>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a
+                    class="nav-link ref pt-0"
+                    aria-current="page"
+                    href="../#why-book-with-us"
+                  >
+                    <div class="refLink">Why book with us</div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link quickMaps"
+                    aria-current="page"
+                    href="../ts-and-cs/index.html"
+                  >
+                    <div class="quickMapsLink">Terms and Conditions</div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <p>
+              &copy;&nbsp;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              &nbsp;<a style="color: #ffffff; text-decoration: none" href="../"
+                >Travel Explorer</a
+              >
+            </p>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <div class="loader-wrapper">
+      <div class="card">
+        <div
+          class="card-body justify-content-center align-items-center text-center p-4"
+        >
+          <p class="m-1">Finding the best fare for your trip</p>
+
+          <p class="m-1">
+            Lagos (LOS)
+            <span
+              ><img
+                class="w-10 loader outbound-plane"
+                src="../assets/img/plane.svg"
+                alt="Outbound plane"
+            /></span>
+            London (LHR)
+          </p>
+          <p class="m-1">Oct 12, 2022</p>
+          <p class="m-1">1 Passenger(s), Economy</p>
+          <!-- <img
+              width="40"
+              src="../assets/img/loading.gif"
+              alt="Loading circle"
+              class="img-fluid loading-circle"
+            /> -->
+        </div>
+      </div>
+      <!-- <div class="h1 text-white">Please wait</div> -->
+      <!-- &nbsp;&nbsp;&nbsp; -->
+      <!-- <span class="loader"><span class="loader-inner"></span></span> -->
+    </div>
+
+    <script>
+      $(window).on("load", function () {
+        setTimeout(function () {
+          $(".loader-wrapper").fadeOut("slow");
+        }, 3000);
+      });
+    </script>
+
+    <!-- Custom JS -->
+    <script src="../assets/js/script.js"></script>
+
+    <!-- Custom owlCarousel -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="../assets/js/owlCarousel.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JavaScript Bundle with Popper -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
