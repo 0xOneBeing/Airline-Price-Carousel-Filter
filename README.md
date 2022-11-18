@@ -12,7 +12,9 @@
 
 - Original file structure is still maintained
 - Relative path to `./assets` directory is still valid
-- Notable additions:
+- Notable additions: 
 1. Owl Carousel removed
-2. `owlCarousel.css` replaced with `slider.css` in the `./assets/css` directory
-3. `owlCarousel.js` replaced with `slider.js` in the `./assets/js` directory
+2. Custom slider built using vanilla JS
+3. `owlCarousel.css` replaced with `slider.css` in the `./assets/css` directory
+4. `owlCarousel.js` replaced with `slider.js` in the `./assets/js` directory
+
