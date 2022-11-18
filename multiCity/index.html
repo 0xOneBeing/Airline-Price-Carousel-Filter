@@ -4,21 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MultiCity - Travel Explorer</title>
+    <title>Multi City - Travel Explorer</title>
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="icon" href="../assets/img/favicon.ico" />
 
-    <!-- Owl Carousl Start -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-    />
-    <link rel="stylesheet" href="../assets/css/owlCarousel.css" />
-    <!-- Owl Carousel End -->
+    
+    <!-- Slider -->
+    <link rel="stylesheet" href="../assets/css/slider.css" />
 
     <!-- jQuery CDN -->
     <script
@@ -1400,28 +1392,22 @@
         </div>
       </div>
 
+      <!-- Slider start -->
       <div class="container">
         <div>
           <div class="row">
-            <section style="font-size: 1em" class="airlinePriceCarousel">
+            <secrion style="font-size: 1em;" class="airlinePriceCarousel">
               <div class="card border p-0 border-0 w-100 airline-card">
                 <div class="card-body">
-                  <div class="owl-carousel owl-theme owl-loaded owl-drag">
-                    <div class="owl-stage-outer">
-                      <div
-                        class="owl-stage"
-                        style="
-                          transform: translate3d(-861px, 0px, 0px);
-                          transition: all 0s ease 0s;
-                          width: 100%;
-                        "
-                      >
-                        <div
-                          class="owl-item cloned"
-                          style="width: 277.333px; margin-right: 10px"
-                        >
+                    <div class="slider">
+                      <div class="button button-left">
+                        <div class="ion-chevron-left slider-arrow-icon-left"><i class="fa-solid fa-chevron-left"></i></div>
+                      </div>
+
+                      <div class="slider-content">
+                        <div class="slide">
                           <div class="item">
-                            <figure>
+                            <figure class="text-center">
                               <a href="#">
                                 <div class="item-img">
                                   <img
@@ -1430,284 +1416,6 @@
                                   />
                                 </div>
                                 <figcaption class="item-info">
-                                  <div class="item-name">
-                                    <small>Airline</small>
-                                  </div>
-                                  <div class="item-price">
-                                    <small>₦ 999,999.99</small>
-                                  </div>
-                                </figcaption>
-                              </a>
-                            </figure>
-                          </div>
-                        </div>
-                        <div
-                          class="owl-item cloned"
-                          style="width: 277.333px; margin-right: 10px"
-                        >
-                          <div class="item">
-                            <figure>
-                              <a href="#">
-                                <div class="item-img">
-                                  <img
-                                    src="http://rest.resvoyage.com/content/airline-logos/AT.png"
-                                    alt="Airline"
-                                  />
-                                </div>
-                                <figcaption class="item-info">
-                                  <div class="item-name">
-                                    <small>Airline</small>
-                                  </div>
-                                  <div class="item-price">
-                                    <small>₦ 999,999.99</small>
-                                  </div>
-                                </figcaption>
-                              </a>
-                            </figure>
-                          </div>
-                        </div>
-                        <div
-                          class="owl-item cloned"
-                          style="width: 277.333px; margin-right: 10px"
-                        >
-                          <div class="item">
-                            <figure>
-                              <a href="#">
-                                <div class="item-img">
-                                  <img
-                                    src="http://rest.resvoyage.com/content/airline-logos/AT.png"
-                                    alt="Airline"
-                                  />
-                                </div>
-                                <figcaption class="item-info">
-                                  <div class="item-name">
-                                    <small>Airline</small>
-                                  </div>
-                                  <div class="item-price">
-                                    <small>₦ 999,999.99</small>
-                                  </div>
-                                </figcaption>
-                              </a>
-                            </figure>
-                          </div>
-                        </div>
-                        <div
-                          class="owl-item active"
-                          style="width: 277.333px; margin-right: 10px"
-                        >
-                          <div class="item">
-                            <figure>
-                              <a href="#">
-                                <div class="item-img">
-                                  <img
-                                    src="http://rest.resvoyage.com/content/airline-logos/AT.png"
-                                    alt="Airline"
-                                  />
-                                </div>
-                                <figcaption class="item-info">
-                                  <div class="item-name">
-                                    <small>Airline</small>
-                                  </div>
-                                  <div class="item-price">
-                                    <small>₦ 999,999.99</small>
-                                  </div>
-                                </figcaption>
-                              </a>
-                            </figure>
-                          </div>
-                        </div>
-                        <div
-                          class="owl-item active"
-                          style="width: 277.333px; margin-right: 10px"
-                        >
-                          <div class="item">
-                            <figure>
-                              <a href="#">
-                                <div class="item-img">
-                                  <img
-                                    src="http://rest.resvoyage.com/content/airline-logos/AT.png"
-                                    alt="Airline"
-                                  />
-                                </div>
-                                <figcaption class="item-info">
-                                  <div class="item-name">
-                                    <small>Airline</small>
-                                  </div>
-                                  <div class="item-price">
-                                    <small>₦ 999,999.99</small>
-                                  </div>
-                                </figcaption>
-                              </a>
-                            </figure>
-                          </div>
-                        </div>
-                        <div
-                          class="owl-item active"
-                          style="width: 277.333px; margin-right: 10px"
-                        >
-                          <div class="item">
-                            <figure>
-                              <a href="#">
-                                <div class="item-img">
-                                  <img
-                                    src="http://rest.resvoyage.com/content/airline-logos/AT.png"
-                                    alt="Airline"
-                                  />
-                                </div>
-                                <figcaption class="item-info">
-                                  <div class="item-name">
-                                    <small>Airline</small>
-                                  </div>
-                                  <div class="item-price">
-                                    <small>₦ 999,999.99</small>
-                                  </div>
-                                </figcaption>
-                              </a>
-                            </figure>
-                          </div>
-                        </div>
-                        <div
-                          class="owl-item"
-                          style="width: 277.333px; margin-right: 10px"
-                        >
-                          <div class="item">
-                            <figure>
-                              <a href="#">
-                                <div class="item-img">
-                                  <img
-                                    src="http://rest.resvoyage.com/content/airline-logos/AT.png"
-                                    alt="Airline"
-                                  />
-                                </div>
-                                <figcaption class="item-info">
-                                  <div class="item-name">
-                                    <small>Airline</small>
-                                  </div>
-                                  <div class="item-price">
-                                    <small>₦ 999,999.99</small>
-                                  </div>
-                                </figcaption>
-                              </a>
-                            </figure>
-                          </div>
-                        </div>
-                        <div
-                          class="owl-item"
-                          style="width: 277.333px; margin-right: 10px"
-                        >
-                          <div class="item">
-                            <figure>
-                              <a href="#">
-                                <div class="item-img">
-                                  <img
-                                    src="http://rest.resvoyage.com/content/airline-logos/AT.png"
-                                    alt="Airline"
-                                  />
-                                </div>
-                                <figcaption class="item-info">
-                                  <div class="item-name">
-                                    <small>Airline</small>
-                                  </div>
-                                  <div class="item-price">
-                                    <small>₦ 999,999.99</small>
-                                  </div>
-                                </figcaption>
-                              </a>
-                            </figure>
-                          </div>
-                        </div>
-                        <div
-                          class="owl-item"
-                          style="width: 277.333px; margin-right: 10px"
-                        >
-                          <div class="item">
-                            <figure>
-                              <a href="#">
-                                <div class="item-img">
-                                  <img
-                                    src="http://rest.resvoyage.com/content/airline-logos/AT.png"
-                                    alt="Airline"
-                                  />
-                                </div>
-                                <figcaption class="item-info">
-                                  <div class="item-name">
-                                    <small>Airline</small>
-                                  </div>
-                                  <div class="item-price">
-                                    <small>₦ 999,999.99</small>
-                                  </div>
-                                </figcaption>
-                              </a>
-                            </figure>
-                          </div>
-                        </div>
-                        <div
-                          class="owl-item cloned"
-                          style="width: 277.333px; margin-right: 10px"
-                        >
-                          <div class="item">
-                            <figure>
-                              <a href="#">
-                                <div class="item-img">
-                                  <img
-                                    src="http://rest.resvoyage.com/content/airline-logos/AT.png"
-                                    alt="Airline"
-                                  />
-                                </div>
-                                <figcaption class="item-info">
-                                  <div class="item-name">
-                                    <small>Airline</small>
-                                  </div>
-                                  <div class="item-price">
-                                    <small>₦ 999,999.99</small>
-                                  </div>
-                                </figcaption>
-                              </a>
-                            </figure>
-                          </div>
-                        </div>
-                        <div
-                          class="owl-item cloned"
-                          style="width: 277.333px; margin-right: 10px"
-                        >
-                          <div class="item">
-                            <figure>
-                              <a href="#">
-                                <div class="item-img">
-                                  <img
-                                    src="http://rest.resvoyage.com/content/airline-logos/AT.png"
-                                    alt="Airline"
-                                  />
-                                </div>
-                                <figcaption class="item-info">
-                                  <div class="item-name">
-                                    <small>Airline</small>
-                                  </div>
-                                  <div class="item-price">
-                                    <small>₦ 999,999.99</small>
-                                  </div>
-                                </figcaption>
-                              </a>
-                            </figure>
-                          </div>
-                        </div>
-                        <div
-                          class="owl-item cloned"
-                          style="width: 277.333px; margin-right: 10px"
-                        >
-                          <div class="item">
-                            <figure>
-                              <a href="#">
-                                <div class="item-img">
-                                  <img
-                                    src="http://rest.resvoyage.com/content/airline-logos/AT.png"
-                                    alt="Airline"
-                                  />
-                                </div>
-                                <figcaption class="item-info">
-                                  <div class="item-name">
-                                    <small>Airline</small>
-                                  </div>
                                   <div class="item-price">
                                     <small>₦ 999,999.99</small>
                                   </div>
@@ -1717,30 +1425,18 @@
                           </div>
                         </div>
                       </div>
+
+                      <div class="button button-right">
+                        <div class="ion-chevron-right slider-arrow-icon-right"><i class="fa-solid fa-chevron-right"></i></div>
+                      </div>
                     </div>
-                    <div class="owl-nav">
-                      <button
-                        type="button"
-                        role="presentation"
-                        class="owl-prev"
-                      >
-                        <span aria-label="Previous">‹</span></button
-                      ><button
-                        type="button"
-                        role="presentation"
-                        class="owl-next"
-                      >
-                        <span aria-label="Next">›</span>
-                      </button>
-                    </div>
-                    <div class="owl-dots disabled"></div>
-                  </div>
                 </div>
               </div>
-            </section>
+            </secrion>
           </div>
         </div>
       </div>
+      <!-- Slider end -->
 
       <div class="container">
         <div class="row">
@@ -3147,16 +2843,9 @@
     <!-- Custom JS -->
     <script src="../assets/js/script.js"></script>
 
-    <!-- Custom owlCarousel -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="../assets/js/owlCarousel.js"></script>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-      crossorigin="anonymous"
-    ></script>
+    <!-- Custom Slider -->
+    <script src="../assets/js/slider.js"></script>
+    
     <!-- JavaScript Bundle with Popper -->
 
     <script
